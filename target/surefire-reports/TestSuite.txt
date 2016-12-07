@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 3.628 sec <<< FAILURE! - in TestSuite
+setUp(BestbuyTesting.NewTest)  Time elapsed: 3.057 sec  <<< FAILURE!
+java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at BestbuyTesting.NewTest.setUp(NewTest.java:83)
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/client-combined-3.0.0-beta2-nodeps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Downloads/selenium-java-3.0.0-beta2/lib/phantomjsdriver-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Desktop/selenium/jxl-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Desktop/selenium/ATUReporter_Selenium_testNG_5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1323928/Desktop/selenium/ATUTestRecorder_2.1.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
