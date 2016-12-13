@@ -18,6 +18,7 @@ import java.io.IOException;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 
 import org.apache.poi.ss.usermodel.Sheet;
@@ -73,16 +74,20 @@ public class NewTest {
 	    		System.out.println(addressSheet.getRow(i).getCell(j));
 	    	}
 	    }
-	    
+	    System.out.println("---------------------------");
 	    HSSFWorkbook NewWorkbook = new HSSFWorkbook();
 		HSSFSheet sheet = NewWorkbook.createSheet("Sample sheet");
 		for(int i=0;i<=addressSheet.getLastRowNum();i++){
 	    	System.out.println("row Number: "+i);
 	    	sheet.createRow(i);
 	    	for(int j=0;j<addressSheet.getRow(i).getLastCellNum();j++){
-	    		System.out.println(addressSheet.getRow(i).getCell(j));
 	    		Cell cell=addressSheet.getRow(i).getCell(j);
-	    		//sheet.getRow(i).
+	    		System.out.println(cell);
+	    		if(cell.getCellTypeEnum()==CellType.NUMERIC)
+	    			sheet.getRow(i).createCell(j).setCellValue(cell.getNumericCellValue());
+	    		else
+	    			sheet.getRow(i).createCell(j).setCellValue(cell.getStringCellValue());
+	    		
 	    	}
 	    }
 		
@@ -115,6 +120,7 @@ public class NewTest {
 
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		//get rid of the pop up web elements
+		/*
 		try{
 
 			if(driver.findElement(By.id("emailModalLabel")).isDisplayed()){			
@@ -132,7 +138,15 @@ public class NewTest {
 		}catch(org.openqa.selenium.NoSuchElementException e){
 		   System.out.println(e);
 		}
-        
+        */
+		
+		if(driver.findElements(By.id("emailModalLabel")).size()!=0){			
+			driver.findElement(By.cssSelector("button.close")).click();
+		};
+		if(driver.findElements(By.id("survey_invite_no")).size()!=0){
+			  driver.findElement(By.id("survey_invite_no")).click();
+		}
+		
 		//search an item and change its quantity in cart
 		changequantity();
 		
